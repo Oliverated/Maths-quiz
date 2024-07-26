@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="math-quiz.js"></script>
+    <style>
+        body {
+            background-color: #001217;
+        }
+
+        main {
+            text-align: center;
+            background-color: #020c3f;
+            color: white;
+            /* margin-top: 20%; */
+            align-items: center;
+            
+            padding: 8%;
+        }
+
+        input {
+            outline: none;
+            padding-left: 1%;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #f9ad66;
+            color: #ede6ce;
+        }
+
+        .header {
+            font-size: 40px;
+        }
+
+        .intro-notice {
+            font-size: 18px;
+        }
+
+        .intro-block{
+            display: none;
+        }
+
+        .notice {
+            color: #ff3b3b;
+        }
+
+        /* question block */
+
+        /* .que-block {
+            display: none;
+        } */
+
+        .name {
+            color: #54a1ff;
+            /* display: inline; */
+            font-size: 40px;
+        }
+
+        .name::first-letter {
+            color: #00587e;
+            font-variant: small-caps;
+            font-size: 40px;
+        }
+
+        .question-text {
+            font-size: 40px;
+            display: flex;
+            gap: 3%;
+            justify-content: center;
+
+
+        }
+
+        .ans-inp {
+            width: 6rem;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+        }
+
+        .attemps{
+            color: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="intro-block">
+                <header class="header">Welcome to Math Quiz </header>
+                <span class="intro-notice">Please enter your name below to continue</span>
+                <br />
+                <br />
+                <input type="text" placeholder="Name" class="name-inp" />
+                <br />
+                <span class="notice"></span>
+                <br />
+                <br />
+                <button class="continue">Continue</button>
+            </div>
+
+            <div class="que-block">
+                <article class="question-text">
+                    <div>
+                        <div class="name"></div>
+                    </div>
+                    <div>
+                        what is <b class="numb1">0</b> <span class="operator">+</span> 
+                        <b class="numb2">0</b> ?
+                    </div>
+                </article>
+                <br />
+                <input type="text" class="ans-inp" placeholder="Enter your answer ?" />
+                <button type="submit" class="answer">Answer</button>
+                <br />
+                <span class="ans-note"></span> <br>
+               <span class="attemps"></span>
+                <br /> <br>
+                <!-- <button class="check">Check</button> -->
+                <button class="generate">Generate</button>
+            </div>
+        </div>
+
+        <!-- <h2>Answer: <b class="ans"></b></h2> -->
+    </main>
+
+
+</body>
+
+</html>
